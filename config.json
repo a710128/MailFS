@@ -1,0 +1,18 @@
+{
+    "tsinghua": {
+        "suffix": "mails.tsinghua.edu.cn",
+        "account": "YOUR ACCOUNT@mails.tsinghua.edu.cn",
+        "password": "PASSWORD",
+        "encoding": "gbk",
+        "receive": {
+            "host": "mails.tsinghua.edu.cn",
+            "port": 993,
+            "ssl": true
+        },
+        "send": {
+            "host": "mails.tsinghua.edu.cn",
+            "port": 465,
+            "ssl": true
+        }
+    }
+}
