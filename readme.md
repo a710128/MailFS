@@ -89,7 +89,7 @@ python main.py mount [-s STORAGE] [-t TIMEOUT] [-r RETRY] [-c CONFIG]
 * `/subject/content.*` : body of this email.
 * `/subject/files/*` : attached files in this email.
 
-### SEND
+### Send Mail
 
 Use command `chmod 777 <site_name>/send/<to>/<subject>` to send an email after putting correct mail structured files to `<site_name>/send/<to>/<subject>`.
 
