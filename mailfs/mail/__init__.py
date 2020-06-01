@@ -272,7 +272,7 @@ class MailManager(object):
             to_ = to_ + "@" + self.config["suffix"]
         for i in range(self.retry):
             try:
-                self.conn_smtp.sendmail(self.config["account"], [to_], mail.as_string())
+                self.conn_smtp.sendmail(self.config["account"], [to_], mail.as_bytes())
                 return True
             except smtplib.SMTPServerDisconnected:
                 self.do_connect_smtp()

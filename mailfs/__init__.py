@@ -69,11 +69,12 @@ class MailFS(fuse.Operations):
                     uid_idx = list(zip(uids, list(range(mlist[0], mlist[-1] + 1))))
                     if not force:
                         # remove items that already exist
-                        uid_idx = list(filter(lambda x: x[0] not in self.meta[kw][box], uid_idx))
                         uids = set(list(map(lambda x:x[0], uid_idx)))
 
                         # process removed emails
                         rm_keys = []
+                        print("%s.%s" % (kw, box))
+                        print(uids)
                         for uid in self.meta[kw][box].keys():
                             if uid not in uids:
                                 rm_keys.append(uid)
