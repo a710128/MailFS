@@ -73,8 +73,6 @@ class MailFS(fuse.Operations):
 
                         # process removed emails
                         rm_keys = []
-                        print("%s.%s" % (kw, box))
-                        print(uids)
                         for uid in self.meta[kw][box].keys():
                             if uid not in uids:
                                 rm_keys.append(uid)
